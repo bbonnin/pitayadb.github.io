@@ -113,7 +113,7 @@
         hljs.initHighlightingOnLoad();
 
         var isPhoneDevice = "ontouchstart" in document.documentElement;
-        if (!isPhoneDevice) {
+        if (isPhoneDevice) {
             $('#fullpage').fullpage({
                 anchors: ['firstPage', 'secondPage', '3rdPage'],
                 sectionsColor: ['#3F51B5', '#FFF', '#424242', '#000'],
